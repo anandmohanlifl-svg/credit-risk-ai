@@ -1,0 +1,50 @@
+{
+  "feature_columns": [
+    "pan_status_active_flag",
+    "pan_bank_name_similarity",
+    "dob_exact_match_flag",
+    "face_match_confidence",
+    "liveness_anti_spoof_score",
+    "device_identity_collision_count",
+    "synthetic_identity_risk_score",
+    "pincode_risk_tier",
+    "verification_passed",
+    "bureau_score",
+    "bureau_enquiry_count_30d",
+    "bureau_active_unsecured_loans",
+    "dpd_max_historic_36m",
+    "dpd_count_90_plus_last_12m",
+    "cheque_inward_bounce_count_180d",
+    "credit_utilization_ratio",
+    "salary_credit_regularity_index",
+    "abb_to_emi_cover_ratio"
+  ],
+  "monotonic_constraints": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+  ],
+  "metrics": {
+    "roc_auc": 0.8672,
+    "pr_auc": 0.4934,
+    "ks_statistic": 0.5796,
+    "brier_score": 0.0587,
+    "test_samples": 3000,
+    "test_default_rate": 0.087
+  }
+}
